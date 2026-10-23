@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "58a43178-bd09-4130-9605-dee8afe06874",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7740904",
+    "_collection_link": "https://go.postman.co/collection/7740904-58a43178-bd09-4130-9605-dee8afe06874?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "academia-Renzo Montalvo",
+      "item": [
+        {
+          "name": "http://localhost:9595/api/v1/matricula",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"fechaMatricula\": \"2026-11-11T13:56:00\",\r\n        \"estudiante\": {\r\n            \"id\": 1\r\n        },\r\n        \"estado\": true,\r\n        \"detalleMatricula\": [\r\n            {\r\n                \"curso\": {\r\n                    \"id\": 1\r\n                },\r\n                \"aula\": \"Clase Virtual Java\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"fechaMatricula\": \"2026-11-15T13:56:00\",\r\n        \"estudiante\": {\r\n            \"id\": 2\r\n        },\r\n        \"estado\": false,\r\n        \"detalleMatricula\": [\r\n            {\r\n                \"curso\": {\r\n                    \"id\": 2\r\n                },\r\n                \"aula\": \"Clase Virtual PLSQL\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 6,\r\n        \"fechaMatricula\": \"2026-11-15T13:56:00\",\r\n        \"estudiante\": {\r\n            \"id\": 4\r\n        },\r\n        \"estado\": true,\r\n        \"detalleMatricula\": [\r\n            {\r\n                \"curso\": {\r\n                    \"id\": 2\r\n                },\r\n                \"aula\": \"Clase Virtual Java\"\r\n            }\r\n        ]\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9595/api/v1/matricula",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9595",
+              "path": [
+                "api",
+                "v1",
+                "matricula"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:9595/api/v1/estudiante",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 1,\r\n    \"nombres\": \"Carlos\",\r\n    \"apellidos\": \"Centurion\",\r\n    \"dni\": \"98989898\",\r\n    \"edad\": 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9595/api/v1/estudiante",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9595",
+              "path": [
+                "api",
+                "v1",
+                "estudiante"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:9595/api/v1/curso",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Java 26 Developer\",\r\n    \"siglas\": \"JAVA\",\r\n    \"estado\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:9595/api/v1/curso",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "9595",
+              "path": [
+                "api",
+                "v1",
+                "curso"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
