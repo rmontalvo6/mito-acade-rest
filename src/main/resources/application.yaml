@@ -1,0 +1,17 @@
+server:
+  port: 9595
+spring:
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://localhost:5432/academia
+    driver-class-name: org.postgresql.Driver
+  threads:
+    virtual:
+      enabled: true
+
